@@ -7,11 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: Checkout code
+      - name: Checkout code
         uses: actions/checkout@v5 
 
-      - run: Set up Node.jobs
+      - name: Set up Node.jobs
         uses: actions/setup-node@v3
+
       - name: Check out repository code
         uses: actions/checkout@v5
         with:
